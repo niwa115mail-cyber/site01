@@ -1,0 +1,452 @@
+@charset "utf-8";
+/* ファミリー動物病院style.CSS */
+/* 共通CSS */
+body{
+  font-family: "Zen Maru Gothic", sans-serif;
+  background-color: #FFF;;
+}
+html{
+  font-size: 62.5%;
+}
+header h1,header nav a,footer h2{
+  font-family: 'Noto Serif JP', serif;
+}
+h2,h3,th,dt{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/* -----.wrapper---------- */
+.wrapper{
+  background-color: #fff;
+  width: 1100px;
+  margin: 0 auto;
+}
+/* -----header---------- */
+header{
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+header h1{
+  font-size: 2.8rem;
+  width: 250px;
+  line-height: 43px;
+  font-weight: 900;
+  background-image: url(../images/logo_mark.svg);
+  background-size: 38px;
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+  padding-left: 45px;
+  /* background-color: orange; */
+}
+header h1 a{
+  color: #030;
+  text-decoration: none;
+}
+
+/* -----nav.global---------- */
+.global{
+  width: 680px;
+  line-height: 26px;
+  margin-top: 10px;
+  /* background-color: orange; */
+}
+.global ul{
+  display: flex;
+  justify-content: flex-end;
+}
+.global ul li a{
+  display: block;
+  color: #030;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 20px;
+  border-right: 1px solid #030;
+}
+.global ul li:last-child a{
+  border-right: none;
+  padding-right: 0;
+}
+.global ul li a:hover span{
+  color: #b27616;
+  border-bottom: 2px solid #b27616;
+}
+/* -----.visual_img---------- */
+.visual_img{
+  width: 100%;
+  height: 200px;
+  background-color: #030;
+  background-image: url(../images/visual_img_01.png);
+  background-size: cover;
+  padding-top: 40px;
+  padding-left: 90px;
+  box-sizing: border-box;
+}
+.visual_img p{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #fff;
+  font-size: 2.0rem;
+  font-weight: 250;
+  line-height: 1.6;
+  text-shadow: 2px 2px 2px #000;
+}
+/* -----ページごとの設定---------- */
+.index .global li:nth-child(1) a span,
+.tool .global li:nth-child(2) a span,
+.catalog .global li:nth-child(3) a span,
+.common .global li:nth-child(4) a span,
+.contact .global li:nth-child(5) a span{
+  color: #b27616;
+  border-bottom: 2px solid #b27616;
+}
+div.box {
+  width: 600px;
+  padding: 10px;
+  border: 5px solid #ccc;
+}
+/* -----.clearfix---------- */
+.clearfix::after {
+content: "";
+display: block;
+ clear: both;
+}
+p.end{clear: both;
+}
+
+/* -----main---------- */
+main{
+  width: 810px;
+}
+main h2{
+ font-size: 2.0rem;
+ font-weight: 500;
+ line-height: 30px;
+ color: #030;
+ background-image: url(../images/h2_img.png);
+ background-repeat: no-repeat;
+ background-position: left center;
+ padding-left: 50px;
+  margin-bottom: 10px;
+}
+main .tea_images{
+  margin-left: 50px;
+  letter-spacing: -6px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+main p{
+  font-size: 1.6rem;
+  margin-left: 50px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+main section{
+  margin-bottom: 20px;
+}
+main section:last-child{
+  margin-bottom: 0;
+}
+
+/* -----production---------- */
+.production{
+  display: flex;
+  justify-content: space-between;
+}
+.commentary{
+  width: 530px;
+}
+.refer{
+  font-size: 1.4rem;
+  margin-top: 50px;
+}
+figure{
+  width: 260px;
+}
+figure img{
+  margin-bottom: 10px;
+}
+figcaption{
+  font-size: 1.4rem;
+  margin-left: 5px;
+}
+
+/* -----dl.info---------- */
+dl.info{
+  font-size: 1.6rem;
+  border: 1px solid #030;
+  height: 100px;
+  padding: 10px 20px;
+  margin-left: 50px;
+  overflow-y: auto;
+}
+dl.info div{
+  display: flex;
+  justify-content: flex-start;
+  line-height: 24px;
+  padding: 10px 0;
+  border-bottom: 2px dotted #ccc;
+  margin-bottom: 5px;
+}
+dl.info dt{
+  width: 9em;
+}
+dl.info dd{
+  width: calc(100% - 9em);
+  text-align: justify;
+}
+
+/* -----aside---------- */
+aside{
+  width: 180px;
+  margin-top: 40px;
+  background-image: url(../images/asid_bg.png);
+  background-size: cover;
+}
+aside .ad{
+  margin-bottom: 20px;
+}
+.index aside{
+  background: none;
+}
+
+/* -----footer---------- */
+footer{
+  background-color: #030;
+  padding: 20px 40px;
+  color: #fff;
+}
+footer .content{
+  margin: 0;
+}
+footer h2{
+  font-size: 2.2rem;
+  line-height: 33px;
+  background-image: url(../images/logo_mark_w.svg);
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+  padding-left: 38px;
+  margin-bottom: 20px;
+}
+/* -----adress---------- */
+adress{
+  margin-left: 40px;
+  font-size: 1.4rem;
+}
+address span{
+  background-image: url(../images/free_dial.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 28px;
+}
+/* -----nav.local---------- */
+.local{
+  margin-top: 5px;
+}
+.local ul li{
+  display: inline-block;
+  text-align: right;
+}
+.local ul li a{
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+}
+.local ul li a:hover{
+  border-bottom: 1px solid #fff;
+}
+/* -----hr---------- */
+hr{
+  height: 1px;
+  background-color: #fff;
+  border: none;
+  margin-top: 20px;
+}
+small{
+  display: block;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* =============お茶と茶器ページ============== */
+.tool .visual_img{
+  width: 100%;
+  height: 160px;
+  background-image: url(../images/visual_img_02.png);
+  background-size: cover;
+}
+.column{
+  margin-left: 24px;
+  margin-top: 30px;
+}
+.tool h3,.common h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 20px;
+  color: #030;
+  background-image: url(../images/h3_img.gif);
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+.column p{
+  margin-left: 24px;
+}
+.column p img{
+  padding: 16px 16px 36px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 6);
+}
+
+/* =============カタログページ============== */
+.catalog .visual_img{
+  height: 160px;
+  background-image: url(../images/visual_img_03.png);
+}
+.showcase{
+  height: 1010px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: stretch;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.showcase section{
+  width: calc((100% / 3) - 20px);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.showcase::after{
+  content: "";
+  display: block;
+  width: calc((100% / 3) - 20px);
+}
+.line{
+  width: 1px;
+  background-color: #ccc;
+}
+.showcase h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 30px;
+  background-color: #608862;
+  color: #fff;
+
+}
+.showcase p{
+  margin: 0;
+}
+
+/* =============コンタクトページ============== */
+.contact .visual_img{
+  height: 160px;
+  background-image: url(../images/visual_img_05.png); 
+}
+table{
+  width: calc(100% - 50px);
+  margin-left: 50px;
+  border: 1px solid #030;
+}
+table th{
+  width: 160px;
+  font-size: 1.6rem;
+  background-color: #608862;
+  color: #fff;
+  text-align: right;
+  padding: 10px 20px;
+  border-bottom: 1px solid #fff;
+}
+table tr:nth-child(7) th{
+  border-bottom: 1px solid #030;
+}
+table td{
+  font-size: 1.6rem;
+  padding: 10px 20px;
+  border: 1px solid #030;
+}
+table tr:last-child td{
+  text-align: center;
+}
+/* -----form---------- */
+input{
+  font-size: 1.6rem;
+  padding: 5px;
+}
+form span{
+  color: #f00;
+  font-size: 1.4rem;
+  margin-left: 20px;
+}
+td label{
+  margin-right: 20px;
+}
+input[type="text"]{
+  width: 70%;
+}
+input#email{
+  margin-bottom: 10px;
+}
+select{
+  font-size: 1.6rem;
+  padding: 5px;
+}
+textarea{
+  font-size: 1.6rem;
+  width: 90%;
+  padding: 5px;
+  box-sizing: border-box;
+  resize: none;
+  vertical-align: bottom;
+}
+.send input{
+  width: 200px;
+}
+/* =============お茶の常識ページ============== */
+.common .visual_img{
+  width: 100%;
+  height: 160px;
+  background-image: url(../images/visual_img_04.png);
+  background-size: cover;
+}
+/* -----dl.common---------- */
+.comm{
+  margin-left: 50px;
+}
+.common h3{
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+.comm dt{
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 30px;
+  color: #030;
+  border-bottom: 2px dotted #030;
+  margin-bottom: 10px;
+}
+.comm dd{
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+/* -----pagetop---------- */
+.pagetop{
+  text-align: right;
+}
+.pagetop a{
+  color: #00f;
+  text-decoration: none;
+}
+.pagetop a:hover{
+  color: #f00;
+  border-bottom: 1px solid #f00;
+}
